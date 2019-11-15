@@ -1,0 +1,14 @@
+fields:
+    name:
+        label: 'Category Name'
+        span: left
+        type: text
+    slug:
+        label: Slug
+        span: auto
+        type: text
+        dependsOn: name
+    description:
+        label: Description
+        span: full
+        type: richeditor

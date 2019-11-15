@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Category
+
+# Model Form Field configuration
+form: $/bookrr/product/models/category/fields.yaml
+
+# Model Class name
+modelClass: Bookrr\Product\Models\Category
+
+# Default redirect location
+defaultRedirect: bookrr/product/category
+
+# Create page
+create:
+    title: Create Category
+    redirect: bookrr/product/category/update/:id
+    redirectClose: bookrr/product/category
+
+# Update page
+update:
+    title: Edit Category
+    redirect: bookrr/product/category
+    redirectClose: bookrr/product/category
+
+# Preview page
+preview:
+    title: Preview Category

@@ -1,0 +1,40 @@
+columns:
+    id:
+        label: ID
+        type: text
+        searchable: true
+        sortable: true
+    name:
+        label: Name
+        type: text
+        format: %.20s
+        width: 180px
+        searchable: true
+        sortable: true
+    summary:
+        label: Description
+        type: text
+        searchable: false
+        sortable: false
+    price:
+        label: Price
+        type: text
+        format: $%.2f
+        width: 80px
+        searchable: false
+        sortable: false
+    sku:
+        label: SKU
+        type: text
+        width: 150px
+        searchable: true
+    stock:
+        label: Stocks
+    thumb:
+        label: Thumb
+        type: partial
+        path: thumb
+    status:
+        label: Publish
+        align: center
+        type: dot

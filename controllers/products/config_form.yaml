@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Product
+
+# Model Form Field configuration
+form: $/bookrr/product/models/products/fields.yaml
+
+# Model Class name
+modelClass: Bookrr\Product\Models\Products
+
+# Default redirect location
+defaultRedirect: bookrr/product/products
+
+# Create page
+create:
+    title: Create Product
+    redirect: bookrr/product/products/update/:id
+    redirectClose: bookrr/product/products
+
+# Update page
+update:
+    title: Edit Product
+    redirect: bookrr/product/products
+    redirectClose: bookrr/product/products
+
+# Preview page
+preview:
+    title: Preview Product

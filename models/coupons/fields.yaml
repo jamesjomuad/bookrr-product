@@ -1,0 +1,36 @@
+fields:
+    name:
+        label: Name/Title
+        span: full
+        type: text
+    code:
+        label: 'Promo Code'
+        span: auto
+        type: text
+    discount:
+        label: '% Discount'
+        span: auto
+        type: number
+    min_cost:
+        label: 'Minimum Purchased Amount'
+        span: auto
+        type: number
+    num_usage:
+        label: Usage Limit
+        span: auto
+        type: number
+    description:
+        label: Description
+        size: large
+        span: full
+        type: textarea
+    start:
+        label: 'Promo Start'
+        span: auto
+        type: datetimepicker
+        default: now
+    end:
+        label: 'Promo End'
+        span: auto
+        type: datetimepicker
+        default: now
