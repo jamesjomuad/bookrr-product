@@ -22,7 +22,6 @@ class CreateProductsTable extends Migration
             $table->string('barcode')->nullable();
             $table->boolean('status')->nullable();
             $table->text('hash')->nullable();
-            $table->string('availability')->nullable();
             $table->text('features')->nullable();
             $table->timestamps();
             $table->softDeletes();

@@ -1,51 +1,53 @@
-fields:
-    name:
-        label: Name
-        span: left
-        type: text
-    price:
-        label: Price
-        span: auto
-        type: number
-    sku:
-        label: SKU
-        span: auto
-        type: text
-    stock:
-        label: Number of Stocks
-        span: auto
-        type: number
-        min: 1
-    barcode:
-        label: Barcode
-        span: auto
-        type: text
-    category:
-        label: Category
-        type: taglist
-        mode: relation
-        span: auto
-    description:
-        label: Description
-        size: large
-        span: full
-        type: richeditor
-    status:
-        label: Publish
-        type: switch
-        span: auto
-        default: 1
-    availability:
-        label: Availability
-        type: switch
-        span: auto
-        default: 1
-    
 tabs:
     fields:
+        name:
+            label: Name
+            span: left
+            tab: Details
+            type: text
+        price:
+            label: Price
+            span: auto
+            tab: Details
+            type: number
+        sku:
+            label: SKU
+            span: auto
+            tab: Details
+            type: text
+        stock:
+            label: Number of Stocks
+            span: auto
+            tab: Details
+            type: number
+            min: 1
+        barcode:
+            label: Barcode
+            span: auto
+            tab: Details
+            type: text
+        category:
+            label: Category
+            type: taglist
+            mode: relation
+            span: auto
+            tab: Details
+        description:
+            label: Description
+            size: large
+            span: full
+            tab: Details
+            type: richeditor
+        status:
+            label: Publish
+            type: switch
+            span: auto
+            tab: Details
+            default: 1
+
         images:
             label: 'Product Images'
-            tab: Galleries
+            tab: Images
             mode: image
             imageWidth: '150'
             imageHeight: '150'
@@ -55,6 +57,7 @@ tabs:
                 extension: auto
             span: full
             type: fileupload
+
         features:
             tab: Features
             type: repeater
