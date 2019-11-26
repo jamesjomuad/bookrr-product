@@ -2,8 +2,9 @@
     <div class="toolbar-item toolbar-primary">
         <div data-control="toolbar">
             <div class="btn-group">
-                <button type="button" class="btn btn-primary oc-icon-plus">New Product</button>
-
+                <a href="http://bookrr.local/backend/bookrr/product/products/create" class="btn btn-primary oc-icon-plus">
+                    New Product
+                </a>
                 <button 
                     type="button" 
                     class="btn btn-default oc-icon-magic" 
@@ -14,7 +15,7 @@
                     data-trigger-action="enable"
                     data-trigger=".control-list input[type=checkbox]"
                     data-trigger-condition="checked"
-                    data-request-success="$(this).prop('disabled', 'disabled')"
+                    data-request-success="$('[data-trigger]').prop('disabled', 'disabled')"
                     data-stripe-load-indicator>
                     Publish
                 </button>
@@ -29,7 +30,7 @@
                     data-trigger-action="enable"
                     data-trigger=".control-list input[type=checkbox]"
                     data-trigger-condition="checked"
-                    data-request-success="$(this).prop('disabled', 'disabled')"
+                    data-request-success="$('[data-trigger]').prop('disabled', 'disabled')"
                     data-stripe-load-indicator>
                     Unpublish
                 </button>
@@ -43,7 +44,7 @@
                     data-trigger-action="enable"
                     data-trigger=".control-list input[type=checkbox]"
                     data-trigger-condition="checked"
-                    data-request-success="$(this).prop('disabled', 'disabled')"
+                    data-request-success="$('[data-trigger]').prop('disabled', 'disabled')"
                     data-stripe-load-indicator>
                     Delete
                 </button>

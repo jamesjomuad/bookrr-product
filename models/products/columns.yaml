@@ -33,7 +33,7 @@ columns:
     thumb:
         label: Thumb
         type: partial
-        path: thumb
+        path: ~/plugins/bookrr/product/controllers/products/_thumb.htm
     status:
         label: Publish
         align: center
